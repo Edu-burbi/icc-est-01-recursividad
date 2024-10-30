@@ -1,7 +1,6 @@
 public class Recursividad {
 
 
-
     public int factorial (int n){
         System.out.println("Calculanado el factorial de: " + n);
         if (n == 0 || n == 1){
@@ -37,7 +36,6 @@ public class Recursividad {
         return base * potencia(base, exponente - 1);
     }
 
-
     // Crear un metodo que sume los digitos de un numero
     // si mando 456 sea igual a 15
     // 4 + 5 + 6 = 15
@@ -52,4 +50,15 @@ public class Recursividad {
         }
         return suma;
     }
+
+    public int fibonacci(int n) {
+
+        if (n==0) return 0;   
+        if (n==1) return 1;
+        return fibonacci(n-1)+fibonacci(n-2);
+    }
+
+    
+
+
 }
